@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MencobaController;
+use App\Http\Controllers\PenilaianController;
 
 Route::get('/login', function () {
     return view('simonika.halaman', [
@@ -44,3 +45,5 @@ Route::get('/kapanewon', function () {
 });
 
 Route::get('/boom', [MencobaController::class, 'boomesport']);
+
+Route::get('/penilaian', [PenilaianController::class, 'index']);
