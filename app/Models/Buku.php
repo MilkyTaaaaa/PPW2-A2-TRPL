@@ -14,4 +14,12 @@ class Buku extends Model
         'harga',
         'tgl_terbit',
     ];
+
+    protected function casts(): array
+    {
+        return [
+            'harga' => 'integer',
+            'tgl_terbit' => 'date',
+        ];
+    }
 }
